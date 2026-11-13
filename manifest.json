@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+
+  "name": "PriceHunter",
+
+  "description": "Painel lateral para comparação de preços.",
+
+  "version": "1.0.0",
+
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+
+  "host_permissions": [
+    "<all_urls>"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "css": [
+        "content/panel.css"
+      ],
+      "js": [
+        "content/panel.js"
+      ]
+    }
+  ],
+
+  "icons": {
+    "16": "assets/icon16.png",
+    "48": "assets/icon48.png",
+    "128": "assets/icon128.png"
+  }
+}
